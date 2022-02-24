@@ -5,13 +5,57 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
+    background-color: rgba(121, 97, 255, 0.5);
+    overflow-x: hidden;
 }
-.my-img{
-    width: 200px;
-    border-radius: 50%;
+.container{
+    width:100%;
+    margin: 0 auto;
+}
+.nav-bar{
+    width: 100%;
+    height: 40px;
+    padding: 2px;
+    background-color: rgba(121, 97, 255, 0.8)
+}
+.nav-bar a{
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: firebrick;
+}
+.name-picture{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+    width: 600px;
+    display: flex;
+    top: 30%;
+    left: 20%;
+    justify-content: space-between;
 }
+.name-picture .tech{
+    flex-direction: column;
+}
+
+.name span{
+    color: red;
+}
+.name{
+max-width: 350px;
+
+}
+.name p{
+    font: 15px;
+}
+.img img{
+width: 250px;
+border-radius: 50%;
+
+}
+.tech{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
