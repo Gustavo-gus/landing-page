@@ -3,9 +3,9 @@
     padding: 0;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     font-size: 25px;
-    background-color: rgba(121, 97, 255, 0.5);
+    background-image: linear-gradient(to bottom right,#031163 25%, red);
     overflow-x: hidden;
 }
 .container{
@@ -16,7 +16,7 @@ body{
     width: 100%;
     height: 40px;
     padding: 2px;
-    background-color: rgba(121, 97, 255, 0.8)
+    background-color: rgba(0, 0, 0, 0.4)
 }
 .nav-bar a{
     float: right;
@@ -24,38 +24,51 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    color: firebrick;
+    color: #fff;
 }
-.name-picture{
-    position: absolute;
-    width: 600px;
-    display: flex;
-    top: 30%;
-    left: 20%;
-    justify-content: space-between;
+.container{
+    color: #fff;
 }
-.name-picture .tech{
-    flex-direction: column;
+.text h3{
+    color: rgba(223, 0, 0, 0.7);
+    padding: 10px 0;
 }
-
-.name span{
-    color: red;
+.text h1{
+    font-size: 45px;
 }
-.name{
-max-width: 350px;
-
-}
-.name p{
-    font: 15px;
+.text{
+    margin: 5em 0 0 5em;
 }
 .img img{
-width: 250px;
-border-radius: 50%;
-
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    right: 7em;
+    top: 6em;
+    border-radius: 50%;
 }
-.tech{
-    width: 100%;
-    margin: 0 auto;
+.socials img{
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
 }
-
-
+.socials ul{
+    display: flex;
+    list-style: none;
+}
+.socials{
+    max-width: 70px;
+    float: right;
+    padding-top: 5em;
+}
+.about-me{
+    text-align: left;
+    padding-top: 5em;
+    max-width: 700px;
+    margin-left: 5em;
+}
+.skills{
+    padding-top: 2em;
+    margin-left: 5em;
+}
