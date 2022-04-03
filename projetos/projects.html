@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./files/calc.css">
+    <link rel="stylesheet" href="./files/timer.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="./files/todo.css">
+    <title>Projetos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calc-project">
+                    <div class="calculadora">
+                        <h1>Calculadora</h1>
+                        <p id="resultado"></p>
+                        <table>
+                            <tr>
+                                <td class="btn" onClick="clean()">C</td>
+                                <td class="btn" onClick="erase()"><</td>
+                                <td class="btn" onClick="insert('/')">/</td>
+                                <td class="btn" onClick="insert('*')">X</td>
+                            </tr>
+                            <tr>
+                                <td class="btn" onClick="insert('7')">7</td>
+                                <td class="btn" onClick="insert('8')">8</td>
+                                <td class="btn" onClick="insert('9')">9</td>
+                                <td class="btn" onClick="insert('-')">-</td>
+                            </tr>
+                            <tr>
+                                <td class="btn" onClick="insert('4')">4</td>
+                                <td class="btn" onClick="insert('5')">5</td>
+                                <td class="btn" onClick="insert('6')">6</td>
+                                <td class="btn" onClick="insert('+')">+</td>
+                            </tr>
+                            <tr>
+                                <td class="btn" onClick="insert('1')">1</td>
+                                <td class="btn" onClick="insert('2')">2</td>
+                                <td class="btn" onClick="insert('3')">3</td>
+                                <td class="btn" onClick="calc()" rowspan="2">=</td>
+                            </tr>
+                            <tr>
+                                <td class="btn" onClick="insert('0')" colspan="2">0</td>
+                                <td class="btn" onClick="insert('.')">.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        <div class="timer-project">
+            <div class="timer">
+                <h1 style="font-size: 30px;">Meu timer</h1>
+                <div class="relogio">00:00:00</div>
+                <div class="btns">
+                    <button class="iniciar">Iniciar</button>
+                    <button class="pausar">Pausar</button>
+                    <button class="zerar">Zerar</button>
+                </div>
+            </div>
+        </div>
+        <div class="todo-project">
+            <div class="todo-list">
+                <h1 style="font-size: 25px;">Lista de tarefas</h1>
+                <p>
+                <input class="inputNewTask" type="text">
+                <button class="btnAddTask">Adicionar tarefa</button>
+                </p>
+                <ul class="tasks"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="./files/timer.js"></script>
+    <script src="./files/calc.js"></script>
+    <script src="./files/todo.js"></script>
+</body>
+</html>
